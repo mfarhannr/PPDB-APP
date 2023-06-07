@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\FormulirComponent;
+use Illuminate\View\Component;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Pages\HomeComponent;
 use App\Http\Livewire\Pages\ValueComponent;
@@ -24,3 +26,4 @@ Route::get("/categories/create", CreateComponent::class)->name('categories.creat
 Route::get("/categories/{categoriesId}/update", UpdateComponent::class)->name('categories.update');
 Route::delete("/categories/{categoriesId}/delete", CategoriesComponent::class)->name('categories.delete');
 Route::get("/value", valueComponent::class)->name('value');
+
