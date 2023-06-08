@@ -41,25 +41,4 @@ class Formulir extends Model
         'nilai2',
 
     ];
-    // public function setDateOfBirthAttribute($birthday)
-    // {
-    //     $this->attributes['birthday'] = Carbon::createFromFormat('d-m-Y', $birthday);
-    //     $date = Carbon::createFromFormat('d/m/Y', $birthday);
-
-    //     $monthName = $date->format('F');
-    // }
-
-
-
-
-
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-    public function details()
-    {
-        return $this->hasMany(Formulir::class, 'id', 'id');
-    }
 }
